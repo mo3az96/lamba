@@ -1353,7 +1353,7 @@ html[dir='rtl'] .product:hover .tools {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .header {
     padding: 10px 0;
     -ms-grid-columns: 1fr;
