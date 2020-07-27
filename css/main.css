@@ -1599,6 +1599,30 @@ html[dir='rtl'] .icon-a .mo-text {
   transition: all 0.3s ease-in-out;
 }
 
+html[dir='ltr'] .drop-user {
+  left: 0;
+}
+
+@media (max-width: 1199px) {
+  html[dir='ltr'] .drop-user {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+html[dir='rtl'] .drop-user {
+  right: 0;
+}
+
+@media (max-width: 1199px) {
+  html[dir='rtl'] .drop-user {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
 .user-li {
   border-bottom: 1px solid #ededf0;
   padding: 0 4px 6px;
