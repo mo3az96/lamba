@@ -429,6 +429,7 @@ html[dir='rtl'] .news-btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-transform: capitalize;
 }
 
 html[dir='ltr'] .nav-li {
@@ -1420,7 +1421,13 @@ html[dir='rtl'] .lang {
   font-size: 23px;
   color: #fbb708;
   width: 36px;
-  margin-bottom: 4px;
+  margin: 0 0 4px;
+}
+
+html[dir='ltr'] .phone-cont i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 4px 0 0;
 }
 
 .phone-cont .phone-text {
@@ -1649,6 +1656,10 @@ html[dir='rtl'] .icon-a .mo-text {
   transition: all 0.3s ease-in-out;
 }
 
+.menu-btn span {
+  padding-top: 7px;
+}
+
 .menu-btn i {
   font-size: 18px;
   width: 28px;
@@ -1676,6 +1687,7 @@ html[dir='rtl'] .icon-a .mo-text {
   font-weight: 500;
   text-align: center;
   margin-bottom: 13px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 991px) {
@@ -1723,6 +1735,7 @@ html[dir='rtl'] .icon-a .mo-text {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 50%;
+  text-transform: capitalize;
 }
 
 @media (max-width: 1199px) {
@@ -1762,6 +1775,7 @@ footer {
   color: #393c3c;
   margin-top: 16px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1199px) {
