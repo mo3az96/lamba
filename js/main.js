@@ -59,7 +59,7 @@ $(document).ready(function () {
         $(".mo-accordion").not(this).siblings().slideUp(500);
     })
     ///////// **search** /////////
-    if ($(window).width() <= 767) {
+    if ($(window).width() <= 991) {
         $(".search-ico").click(function () {
             $(".search-cont").fadeIn(400);
             $("body").addClass("overflow");
