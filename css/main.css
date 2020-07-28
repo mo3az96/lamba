@@ -1681,17 +1681,22 @@ html[dir='rtl'] .drop-user {
 
 .menu-btn {
   background-color: #fbb708;
-  padding: 10px 15px;
+  padding: 0 15px;
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: #393c3c;
+  height: 45px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.menu-btn span {
+  padding-top: 7px;
 }
 
 .menu-btn i {
