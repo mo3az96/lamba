@@ -1738,6 +1738,32 @@ html[dir='rtl'] .drop-user {
   }
 }
 
+.hint {
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #fbb708;
+  color: #393c3c;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+}
+
+.hint .close-btn {
+  font-size: 10px;
+  position: absolute;
+  top: 15px;
+  cursor: pointer;
+}
+
+html[dir='ltr'] .hint .close-btn {
+  right: 15px;
+}
+
+html[dir='rtl'] .hint .close-btn {
+  left: 15px;
+}
+
 .sec-title {
   font-size: 30px;
   color: #393c3c;

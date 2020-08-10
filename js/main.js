@@ -100,4 +100,7 @@ $(document).ready(function () {
             $("body").removeClass("overflow");
         });
     }
+    $('.close-btn').click(function () {
+        $(".hint").slideUp(300);
+    })
 });
