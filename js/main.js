@@ -1,12 +1,26 @@
 $(window).on('load', function () {
     $('.pre-loader').fadeOut("500", function () {
         $(this).remove();
-        $("body").removeClass("overflow");
     });
+    $(".mo-bannerpop-overlay").fadeIn(500)
+    $(".mo-bannerpop").addClass("mo-bannerpop-in");
 });
 $(document).ready(function () {
     new WOW().init();
 
+    $('.mo-bannerpop-overlay').click(function () {
+        $(".mo-bannerpop-overlay").fadeOut(400);
+        $(".mo-bannerpop").removeClass("mo-bannerpop-in");
+        $("body").removeClass("overflow");
+    });
+    $('.mo-bannerpop').click(function (e) {
+        e.stopPropagation();
+    });
+    $('.mo-bannerpop-close').click(function () {
+        $(".mo-bannerpop-overlay").fadeOut(400);
+        $(".mo-bannerpop").removeClass("mo-bannerpop-in");
+        $("body").removeClass("overflow");
+    });
     ///////// **Main Slider** ///////// 
     $('.main-slider').owlCarousel({
         items: 1,
